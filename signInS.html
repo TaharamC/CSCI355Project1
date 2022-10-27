@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <style>
+        .form{
+            margin: auto;
+            width: 250px;
+            margin-top: 100px;
+            background-color: lightblue;
+            padding: 25px;
+            height: 250px;
+        }
+        .nav{
+            margin-top: -80px;
+            float: right;
+            padding-right: 30px;
+            color: blue;
+            font-size: 25px;
+        }
+        a:link{
+            text-decoration: none;
+        }
+        #home,#about,#contact,#buyer{
+            background-color: lightcyan;
+        }
+        #seller{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#" id="home">Home</a>
+        <a href="#" id="about">About</a>
+        <a href="#" id="contact">Contact</a>
+        <a href="signInB.html" id="buyer">Buyer</a>
+        <a href="signInS.html" id="seller">Seller</a>
+    </div>
+    <div class="container">
+        <div class="form" >
+            <form method="post" action="displayMySale.php">
+                <label>Username:
+                    <input type="email" name="username" id="user" placeholder="john_doe@gmail.com">
+                </label><br><br>
+                <label>Password:
+                    <input type="password" name="psswd" id="psswd" placeholder="atleast 8 characters">
+                </label><br><br>
+                <button type="submit">Signin</button><br><br>
+                <a href="signUpS.htm">Don't have an account click to register</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
